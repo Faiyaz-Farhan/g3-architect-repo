@@ -11,12 +11,113 @@
  .flex{
     display: flex;
  }
+ .gray{
+    color: #424242;
+ }
+ .lt-gray{
+    color: #727272;
+ }
+ .bg-light{
+    background-color: rgba(255, 144, 14, 0.1);
+ }
+ .btn{
+    background-color: #FF900E;
+    padding: 20px 25px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: white;
+    border: none;
+    border-radius: 8px;
+ }
+ .section-ttl{
+  font-size: 2.8rem;
+  font-weight: 700;
+  max-width: 452px;
+}
 /* header style */
 
 /* navber style */
 .nav{
-    
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-item{
+    list-style: none;
+    margin-left: 20px;
 }
 .nav-link{
-    
+    text-decoration: none;
+    font-weight: 500;
+}
+.nav, .banner{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.brand{
+  font-weight: 700;
+  font-size: 3rem;
+  
+}
+main{
+  max-width: 1440px;
+    margin: 0 auto;
+}
+main>section{
+  margin-top: 130px;
+}
+.team-img{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+.feature{
+  margin-left: 130px;
+  max-width: 530px;
+  
+}
+
+#Quick {
+  font-weight: 500;
+}
+#f{
+  color: #FF900E;
+}
+.team{
+  align-items: center;
+}
+/* banner related styles */
+.bn-cntr{
+   max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.bn-ttl{
+  font-size: 4em;
+  font-weight: bold;
+}
+.bn-img{
+  width: 100%;
+}
+
+/* Responsive */
+@media  screen and (max-width: 576px) {
+  .nav, .nav-link, .team{
+    flex-direction: column;
+  }
+.team-img{
+    grid-template-columns: repeat(1, 1fr);
+}
+.feature{
+  margin-left: 20px;
+}
+}
+/* medium device */
+@media screen and (min-width: 576px) and (max-width: 990px) {
+  .team{
+    flex-direction: column;
+  }
+.feature{
+  margin: 50px auto;
+}
 }
